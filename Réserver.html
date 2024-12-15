@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza de Luigi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <p class="boutons"><a href="Accueil.html">Accueil</a></p>
+    <p class="boutons"><a href="Réserver.html">Réserver</a></p>
+    <p class="boutons"><a href="Contact.html">Contact</a></p>
+    <form>
+    <h2>Réserver une table</h2>
+  <ul>
+    <li>
+      <label for="name">Nom&nbsp;:</label>
+      <input type="text" id="name" name="user_name" />
+    </li>
+    <li>
+      <label for="mail">E-mail&nbsp;:</label>
+      <input type="email" id="mail" name="user_mail" />
+    </li>
+    <li>
+      <label for="msg">Message&nbsp;:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </li>
+    </ul>
+    <p class="réduction">Je possède un code de réduction :</p>
+    <p class="réduction">
+    Oui: <input class="radio" type="radio" name="oui" /><br />
+    Non: <input class="radio" type="radio" name="non" />
+    </p>
+    <label id="daterésa" for="datereserv">Date :</label>
+    <input type="date" id="daterésa" name="daterésa" value="2024-12-15" min="2018-01-01" max="2100-12-31" />
+    <fieldset>
+  <legend>Veuillez sélectionner le moment de la journée</legend>
+  <div>
+    <input type="checkbox" id="moment" name="interest" value="midi" />
+    <label class="textmoment" for="midi">Midi</label>
+  </div>
+  <div>
+    <input type="checkbox" id="moment" name="interest" value="soir" />
+    <label class="textmoment" for="soir">Soir</label>
+  </div>
+</fieldset>
+    <div class="button">
+    <button type="submit">Réserver</button>
+    </div>
+    </form>
+</body>
